@@ -3,13 +3,13 @@ pipeline {
   agent any
   stages {
     stage('init') {
-      script {
+      steps {
         echo "init..."
       }
     }
     
     stage('checkout') {
-      script {
+      steps {
         echo "checkout..."
       }
     }
@@ -18,7 +18,7 @@ pipeline {
 
   post {
     always {
-      script {
+      steps {
         echo "post..."
       }
     }
