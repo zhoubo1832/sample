@@ -3,18 +3,24 @@ pipeline {
   agent any
   stages {
     stage('init') {
-      echo "init..."
+      script {
+        echo "init..."
+      }
     }
     
     stage('checkout') {
-      echo "checkout..."
+      script {
+        echo "checkout..."
+      }
     }
   
   }
 
   post {
     always {
-      echo "post..."
+      script {
+        echo "post..."
+      }
     }
   }
 }
