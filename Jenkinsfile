@@ -18,9 +18,7 @@ pipeline {
 
   post {
     always {
-      steps {
-        echo "post..."
-      }
+      echo "post..."
     }
   }
 }
